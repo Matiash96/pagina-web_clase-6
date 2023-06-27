@@ -6,10 +6,11 @@
 body{
     font-family: sans-serif;
     padding: 90px 20px 0px;
+    background-color: aliceblue;
 }
 
 .header{
-    background-color: #0769e9;
+    background-color: rgba(7, 105, 233, 0.5);
     height: 80px;
     width: 100%;
     /* dejar fijo la barra de navegacion */
@@ -20,10 +21,10 @@ body{
 
 .nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     /* Ancho máximo */
-    max-width: 992px;
-    margin: 0 auto;
+    /* max-width: 1300px; */
+    margin: auto 30px ;
 }
 
 .nav-link{
@@ -34,7 +35,8 @@ body{
 .logo{
     font-size: 30px;
     font-weight: bold;
-    padding: 0 40px;
+    padding: 0 0px;
+    margin-left: 40px;
     line-height: 80px;
 }
 
@@ -51,7 +53,7 @@ body{
 
 .nav-menu-item{
     font-size: 18px;
-    margin: 0 7px;
+    margin: 0 15px;
     line-height: 80px;
     text-transform: uppercase;
     /* Nunca corta el contenido */
@@ -65,6 +67,98 @@ body{
 }
 
 .nav-menu-link:hover{
-    background-color: #034574;
+    background-color: rgb(3, 68, 114);
     transition: 0.5s;
+}
+
+/* Contacto */
+/* Estilos al formulario */
+.form{
+    width: 450px;
+    /* Centramos el formulario horizontalmente */
+    margin: auto;
+    background: rgba(7, 105, 233, 0.2);
+    padding: 10px 20px;
+    margin: 20px auto;
+    border-radius: 7px;
+}
+
+.form h2{
+    color: black;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+input, textarea, .button{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    font-size: 17px;
+    border: none;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    min-width: 100%;
+    max-width: 100%; 
+}
+
+.form .checkbox{
+    width: auto;
+    margin-right: 15px;
+}
+
+.button{
+    background-color: #31384A;
+    color: #fff;
+    padding: 20px;
+    border-radius: 3px;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+@media(max-width: 480px){
+    .form{
+        width: 100%;
+    }
+}
+
+/* Ubicación */
+.section-ubicacion{
+    margin: 30px auto;
+}
+
+.section-ubicacion h2{
+    color: black;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.section-ubicacion-mapa{
+    text-align: center;
+}
+
+.section-ubicacion-mapa iframe {
+    width: 450px;
+    border-radius: 3px;
+}
+
+/* Sobre nosotros */
+.nosotros-h2{
+    font-size: 50px;
+    color: #2e4275;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.nosotros-video{
+    margin-top: 10vh;
+    text-align: center;
 }

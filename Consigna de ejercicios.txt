@@ -1,0 +1,8 @@
+Hacer un nuevo repo en github
+Hacer sitio web responsive:
+	1. 5 secciones minimo entre ellas tiene que tener: index, contacto, sobre nosotros, galería, car tipo ecommerce.
+	2. index: 4 secciones con texto, cada seccion debe tener una seccion de call to action (botones de navegación)
+	3. contacto: una seccion sola (por un lado un mapa y un formulario de contacto)
+	4. sobre nosotros: buscar propaganda que se llama "Gloriosos" (comercial de quilmes de youtube e insertarlo)
+	5. Galería: debe tener un minimo de 9 fotos y debe ser completamente responsive 
+	6. car tipo ecommerce: como la clase 5

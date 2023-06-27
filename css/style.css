@@ -129,11 +129,17 @@ textarea{
 }
 
 /* Ubicación */
-.section-ubicacion{
+.contacto{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contacto-ubicacion{
     margin: 30px auto;
 }
 
-.section-ubicacion h2{
+.contacto-ubicacion h2{
     color: black;
     text-align: center;
     margin: 0;
@@ -141,11 +147,11 @@ textarea{
     margin-bottom: 20px;
 }
 
-.section-ubicacion-mapa{
+.contacto-ubicacion-mapa{
     text-align: center;
 }
 
-.section-ubicacion-mapa iframe {
+.contacto-ubicacion-mapa iframe {
     width: 450px;
     border-radius: 3px;
 }

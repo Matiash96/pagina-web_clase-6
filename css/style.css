@@ -5,26 +5,27 @@
 
 body{
     font-family: sans-serif;
-    padding: 90px 20px 0px;
     background-color: aliceblue;
+    /* dejar fijo la barra de navegacion */
+    /* padding: 90px 20px 0px; */
 }
 
 .header{
     background-color: rgb(7, 105, 233);
     height: 80px;
     width: 100%;
+
     /* dejar fijo la barra de navegacion */
-    position: fixed;
+    /* position: fixed;
     top: 0;
-    left: 0;
+    left: 0; */
 }
 
 .nav{
     display: flex;
     justify-content: space-evenly;
-    /* Ancho máximo */
-    /* max-width: 1300px; */
     margin: auto 30px ;
+    margin-left: 40px;
 }
 
 .nav-link{
@@ -32,18 +33,10 @@ body{
     text-decoration: none;
 }
 
-.logo{
-    font-size: 30px;
-    font-weight: bold;
-    padding: 0 0px;
-    margin-left: 40px;
-    line-height: 80px;
-}
-
 .logo-img{
     width: 80px;
     height: 80px;
-    font-size: 10px;
+    /* font-size: 10px; */
 }
 
 .nav-menu{
@@ -62,9 +55,10 @@ body{
 }
 
 .nav-menu-link{
+    color: black;
+    text-decoration: none;
     padding: 8px 12px;
     border-radius: 3px;
-
 }
 
 .nav-menu-link:hover{
@@ -74,15 +68,16 @@ body{
 
 /* INICIO */
 .section-inicio{
-    border-style: solid;
-    border-color: #034472;
-    margin-bottom: 10px;
-    text-align: justify;
+    border: 3px ridge #034472;
     border-radius: 5px;
-    border-width: 2px;
+    width: 80%;
+    /* Vertical | Horizontal */
+    margin: 10px auto;
+    background: linear-gradient(rgb(0, 251, 255), blue);
 }
 
-.section-inicio h3{
+.section-inicio h2{
+    color: rgb(241, 183, 10);
     text-align: center;
     padding: 10px 0px;
 }
@@ -97,11 +92,16 @@ body{
 }
 
 .section-inicio-button{
+    width: 150px;
+    font-size: 15px;
     margin: 10px;
-    background-color: transparent;
+    padding: 10px 0;
+    color: white;
+    background-color: #0e212e;
     font-weight: bold;
-    border: 2px solid #034472;
-    border-radius: 3px;
+    border: none;
+    /* border: 2px solid #034472; */
+    border-radius: 5px;
 }
 
 .section-inicio-button:hover{
@@ -111,17 +111,20 @@ body{
 
 /* TIENDA */
 .container{
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 0 auto ;
 }
 
 .container-box{
     width: 300px;
-    margin: 5px;
+    margin: 10px 5px;
     border-radius: 5px;
     border: 2px solid #034472;
     background-color: #74a9cf;
+    
 }
 
 .container-box img{
@@ -165,6 +168,47 @@ body{
     transition: 0.5s;
 }
 
+/* GALERÍA */
+.galeria-container{
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+.galeria-container-img{
+    flex: 33%;
+    padding: 5px;
+}
+
+.galeria-container-img img{
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+@media (max-width: 767px){
+    .galeria-container-img{
+        flex: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .galeria-container-img{
+        flex: 50%;
+    }
+}
+
+/* Sobre nosotros */
+.nosotros-h2{
+    font-size: 50px;
+    color: #2e4275;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.nosotros-video{
+    margin-top: 10vh;
+    text-align: center;
+}
 
 /* CONTACTO */
 /* Estilos al formulario */
@@ -176,6 +220,7 @@ body{
     padding: 10px 20px;
     margin: 20px auto;
     border-radius: 7px;
+    box-shadow: 7px 13px 37px #000;
 }
 
 .form h2{
@@ -192,6 +237,7 @@ input, textarea, .button{
     padding: 7px;
     font-size: 17px;
     border: none;
+
 }
 
 textarea{
@@ -200,6 +246,7 @@ textarea{
     min-width: 100%;
     max-width: 100%; 
 }
+
 
 .form .checkbox{
     width: auto;
@@ -215,12 +262,6 @@ textarea{
 
 .button:hover{
     cursor: pointer;
-}
-
-@media(max-width: 480px){
-    .form{
-        width: 100%;
-    }
 }
 
 /* UBICAION */
@@ -251,15 +292,24 @@ textarea{
     border-radius: 3px;
 }
 
-/* Sobre nosotros */
-.nosotros-h2{
-    font-size: 50px;
-    color: #2e4275;
-    margin-top: 30px;
-    text-align: center;
-}
 
-.nosotros-video{
-    margin-top: 10vh;
-    text-align: center;
-}
+
+/* Smartphone */
+/* @media (max-width: 767px){
+    
+} */
+
+/* Tablet */
+/*@media (min-width: 768px) and (max-width: 1023px){
+    
+} */
+
+/* Escritorio */
+/* @media (min-width: 1024px){
+
+} */
+
+/* Escritorio */
+/* @media (min-width: 1280px){
+    
+} */

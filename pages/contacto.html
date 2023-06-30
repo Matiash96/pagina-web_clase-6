@@ -33,20 +33,17 @@
                     </div>
                 </div>
                 
-                <form action="#" method="post" class="form">
+                <form method="post" class="form">
                     <h2>Contacto</h2>
-                    <input type="text" name="nombre" placeholder="Nombre">
-                    <input type="email" name="email" placeholder="email">
+                    <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
+                    <input type="email" name="email" placeholder="email" required>
                     <input type="tel" name="telefono" placeholder="Número de contacto">
                     <textarea name="mensaje" placeholder="Escriba aquí su consulta"></textarea>
     
-                    <!-- <label for="">
-                        <input type="checkbox" value="checkbox" name="checkbox" class="checkbox">Deseó recibir ofertas y
-                        promociones
-                    </label> -->
-                    <input type="checkbox" value="checkbox" name="checkbox" class="checkbox">
-                    <label for="checkbox">Deseó recibir ofertas y promociones</label>
-    
+                    <label>
+                        <input type="checkbox" class="checkbox"> Deseó recibir ofertas y promociones
+                    </label>
+
                     <button type="submit" name="enviar" class="button">Enviar</button>
                 </form>
     
